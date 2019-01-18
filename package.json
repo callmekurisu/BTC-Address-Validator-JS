@@ -1,11 +1,21 @@
 {
-  "name": "btcaddressvalidator",
+  "name": "btc-address-validator",
   "version": "1.0.0",
   "description": "validate bitcoin address",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/callmekurisu/BTC-Address-Validator-JS.git"
+  },
+  "keywords": [
+    "bitcoin",
+    "sha256",
+    "address",
+    "validation"
+  ],
   "author": "callmekurisu",
   "license": "ISC",
   "dependencies": {
