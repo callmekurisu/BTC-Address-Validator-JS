@@ -1,5 +1,4 @@
 // This project requires Node 11.6+
-const crypto = require('crypto');
 const TO_BYTE_ARRAY = require('./byteArray');
 const DECODE_BASE_58 = require('./decodeBase58');
 const SHA256 = require('js-sha256').sha256;
