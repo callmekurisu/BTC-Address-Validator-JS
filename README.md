@@ -6,6 +6,7 @@ npm package to validate bitcoin addresses
 <br/>
 ```cd BTC-Address-Validator-JS/```
 <br/>
+# Install with npm
 ```npm i btc-address-validator```
 <br/>
 # Testing with Mocha
