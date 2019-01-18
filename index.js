@@ -27,6 +27,4 @@ validateAddress = addy => {
   true : console.error("Invalid address");
 }
 
-exports = () => {
-  validateAddress();
-}
+module.exports = validateAddress;
