@@ -1,7 +1,7 @@
 # BTC-Address-Validator-JS
-npm package to validate bitcoin addresses
+<p>npm package to validate bitcoin addresses</p>
 <br/>
-this package require Node 11.6+
+<p>this package requires Node 11.6+</p>
 <br/>
 ```git clone https://github.com/callmekurisu/BTC-Address-Validator-JS```
 <br/>
@@ -15,5 +15,5 @@ this package require Node 11.6+
 <br/>
 ```const VALIDATE = require('btc-address-validator')```
 <br/>
-returns true for valid bitcoin addresses
+<p>returns true for valid bitcoin addresses</p>
 
