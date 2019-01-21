@@ -19,7 +19,7 @@ decodeBase58To25Bytes = (input) => {
     let i = numBytes.length;
     while(i--) result[i] = numBytes[i];
     /*
-       * This array should be 24 or 25 bytes
+       * This array should be 24 or 25 in length
        * If it is 25, gtg
        * If its 24 remove undefined and insert 0 at the beginning
        *
