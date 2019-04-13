@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Conversion to Byte Array
  * @param BigInt

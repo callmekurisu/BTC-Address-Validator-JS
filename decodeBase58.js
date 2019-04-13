@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Initialized alphanumeric characters
  */
@@ -8,20 +9,20 @@ const toByteArray = require('./byteArray');
  * Conversion from 58 to 25 bytes
  * @param {String}
  */
-decodeBase58To25Bytes = (input) => {
+const decodeBase58To25Bytes = (input) => {
   let num = BigInt(0);
   let arr = input.split("");
   let charArray = [];
   arr.forEach((char, i) => {
-    let p = alphanum.indexOf(char);
+    const p = alphanum.indexOf(char);
     if (p !== -1) {
       charArray.push(p);
     }
     num = ((num * (BigInt(58))) + (BigInt(p)));
   });
 
-  let result = Array(25);
-  let numBytes = toByteArray(num);
+  const result = Array(25);
+  const numBytes = toByteArray(num);
 
   let i = numBytes.length;
   while (i--) result[i] = numBytes[i];
