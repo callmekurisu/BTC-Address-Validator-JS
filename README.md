@@ -1,5 +1,5 @@
 # BTC-Address-Validator-JS
-npm package to validate bitcoin addresses
+npm package to validate base 58 bitcoin addresses
 <br/>
 this package requires Node 11.6+
 <br/>
