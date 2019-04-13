@@ -1,7 +1,10 @@
 // This project requires Node 11.6+
-const TO_BYTE_ARRAY = require('./byteArray');
-const DECODE_BASE_58 = require('./decodeBase58');
-const SHA256 = require('js-sha256').sha256;
+const toByteArray = require('./byteArray');
+const decodeBase58To25Bytes = require('./decodeBase58');
+const sha256 = require('js-sha256').sha256;
+/**
+ * Validate base 58 address
+ */
 validateAddress = addy => {
   // Check length of address
   const RESULT = addy.length < 26 || addy.length > 35 ? false : true;
@@ -17,10 +20,10 @@ validateAddress = addy => {
   // Hash decoded element 0-21
   // Hash that hash
   // Check if second hash elements 0-4 match decoded 21, 25
-  let hash1 = SHA256(DECODED.slice(0,21));
-  let h1ByteArray = TO_BYTE_ARRAY(hash1);
-  let hash2 = SHA256(h1ByteArray);
-  let hash2ByteArray = TO_BYTE_ARRAY(hash2);
+  let hash1 = sha256(DECODED.slice(0,21));
+  let h1ByteArray = toByteArray(hash1);
+  let hash2 = sha256(h1ByteArray);
+  let hash2ByteArray = toByteArray(hash2);
   // If address is not valid show error in console
   hash2ByteArray.slice(0,4).toString() === DECODED.slice(21,25).toString() ?
   true : console.error("Invalid address");
