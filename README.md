@@ -17,8 +17,8 @@ this package requires Node 11.6+
 <br/>
 <br/>
 # Add module
-```const VALIDATE = require('btc-address-validator')```
+```const validate = require('btc-address-validator')```
 <br/>
-```VALIDATE("soMeBtCAddresSHEre");```
+```validate("soMeBtCAddresSHEre");```
 <br/>
 returns true for valid bitcoin addresses
