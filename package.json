@@ -1,6 +1,6 @@
 {
   "name": "btc-address-validator",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "validate base 58 bitcoin address",
   "main": "index.js",
   "scripts": {

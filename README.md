@@ -8,7 +8,7 @@ this package requires Node 11.6+
 ```cd BTC-Address-Validator-JS/```
 <br/>
 # Testing with Mocha
-```npm test``` 
+```npm test```
 <br/>
 # Install with npm
 ```npm i btc-address-validator```
