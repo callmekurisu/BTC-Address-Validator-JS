@@ -10,11 +10,11 @@ validateAddress = addy => {
   const RESULT = addy.length < 26 || addy.length > 35 ? false : true;
   // Verify decoded address !null
   if(!RESULT){
-    return console.error("Invalid address length");
+    return "Invalid address length";
   }
   const DECODED = decodeBase58To25Bytes(addy);
   if (DECODED === null){
-    return console.error("Invalid address type");;
+    return "Invalid address type";
   }
 
   // Hash decoded element 0-21
@@ -25,8 +25,9 @@ validateAddress = addy => {
   let hash2 = sha256(h1ByteArray);
   let hash2ByteArray = toByteArray(hash2);
   // If address is not valid show error in console
-  hash2ByteArray.slice(0,4).toString() === DECODED.slice(21,25).toString() ?
-  true : console.error("Invalid address");
+  const result = hash2ByteArray.slice(0,4).toString() === DECODED.slice(21,25).toString() ?
+  true : false;
+  return result;
 }
 
 module.exports = validateAddress;
