@@ -7,6 +7,8 @@ this package requires Node 11.6+
 <br/>
 ```cd BTC-Address-Validator-JS/```
 <br/>
+```npm install```
+<br/>
 # Testing with Mocha
 ```npm test```
 <br/>
@@ -20,4 +22,3 @@ this package requires Node 11.6+
 ```VALIDATE("soMeBtCAddresSHEre");```
 <br/>
 returns true for valid bitcoin addresses
-
