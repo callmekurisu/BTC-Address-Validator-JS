@@ -1,7 +1,6 @@
 'use strict'
 /**
  * Conversion to Byte Array
- * @param BigInt
  */
 const toByteArray = (x) => {
   let hexString = x.toString(16);
