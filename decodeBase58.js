@@ -7,7 +7,7 @@ const alphanum =
 const toByteArray = require('./byteArray');
 /**
  * Conversion from 58 to 25 bytes
- * @param {String}
+ * @param {String} input base 58 address
  */
 const decodeBase58To25Bytes = (input) => {
   let num = BigInt(0);
