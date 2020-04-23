@@ -1,8 +1,7 @@
-'use strict'
 /**
  * Conversion to Byte Array
  */
-const toByteArray = (x) => {
+export function createByteArray(x:string | BigInt): number[] {
   let hexString = x.toString(16);
   if (hexString.length % 2 > 0) hexString = "0" + hexString;
   let byteArray = [];
@@ -19,5 +18,3 @@ const toByteArray = (x) => {
   });
   return byteArray2;
 };
-
-module.exports = toByteArray;
